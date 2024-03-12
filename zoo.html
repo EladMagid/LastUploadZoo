@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./zoo.css" />
+  </head>
+  <body>
+    <div class="welcome">
+      <h1>The Zoo!</h1>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="form-section" id="search">
+        <label class="user-label">Animal Name</label>
+        <input type="text" id="name" name="Aname" placeholder="Animal name" />
+      </div>
+
+      <div class="form-section" id="weight">
+        <label class="user-label"> Min weight </label>
+        <input
+          type="number"
+          id="Aweight"
+          name="Aweight"
+          placeholder="Min weight"
+        />
+      </div>
+
+      <div class="form-section" id="height">
+        <label class="user-label"> Min height </label>
+        <input
+          type="number"
+          id="Aheight"
+          name="Aheight"
+          placeholder="Min height"
+        />
+      </div>
+
+      <div class="form-section" id="color">
+        <label class="user-label">Select Color:</label>
+        <input type="text" id="Acolor" list="color-options" />
+        <datalist id="color-options">
+          <option value="Red"></option>
+          <option value="Green"></option>
+          <option value="Blue"></option>
+          <option value="Brown"></option>
+          <option value="Grey"></option>
+        </datalist>
+      </div>
+
+      <div>
+        <div>
+          <label for="" style="font-size: large"> sea </label>
+          <input type="radio" id="seaHabitat" name="habitat" value="sea" />
+
+          <label for="" style="font-size: large"> land </label>
+          <input type="radio" id="landHabitat" name="habitat" value="land" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <button type="button" id="saveButton">
+      Save current details for the existing name
+    </button> -->
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <button type="button" id="clearFilters">Clear Filters</button>
+    </div>
+    <div id="animal-cards"></div>
+    <script src="./zoo.js"></script>
+  </body>
+</html>

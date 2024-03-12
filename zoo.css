@@ -1,0 +1,89 @@
+body {
+  background-image: url(./images/sunset.jpg);
+  background-size: cover; /* or 'contain' */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.animal-card {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animal-image {
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 8px;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+/* Add some styling to the animal placeholder */
+#animal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Optional: Style the filter controls, assuming you have them */
+#filter-controls {
+  margin: 20px 0;
+}
+
+/* Optional: Style the visit button or any other interactive elements */
+.visit-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color: #2980b9;
+}
+
+.welcome {
+  font-size: 48px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #ffffff; /* Change the color to your preference */
+  text-align: center; /* Center align the text */
+  /* Additional styling */
+  margin-top: 50px; /* Add some spacing above the heading */
+  margin-bottom: 50px; /* Add some spacing below the heading */
+  /* You can add more styles as needed */
+}
+
+.form-section {
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.form-section :focus {
+  outline-color: white;
+  background-color: transparent;
+  box-shadow: 5px 5px #888888;
+}

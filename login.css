@@ -1,0 +1,155 @@
+* {
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+body {
+  background-image: url(./images/summer.jpg);
+  background-size: cover; /* or 'contain' */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+#placeholder {
+  background-color: transparent;
+  display: flex; /* Display children in a flex row */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px; /* Padding around the container */
+  justify-content: center; /* Center items horizontally */
+}
+
+.card {
+  max-height: 300px; /* Limit the maximum height of the card */
+  width: 185px;
+  border-radius: 30px;
+  border: 5px solid transparent; /* Add a solid border */
+  background: #fffbfb;
+  overflow: hidden; /* Hide any content that overflows */
+  word-wrap: break-word; /* Allow text to wrap */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.card-body {
+  padding: 10px; /* Add padding to the card body */
+}
+
+.card p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.card-text {
+  margin-top: 10px; /* Add some space between text and image */
+  font-size: 20px; /* Adjust font size if necessary */
+}
+
+#visitors-dialog {
+  position: fixed; /* Position the modal relative to the viewport */
+  top: 50%; /* Position the top of the modal at the vertical center of the viewport */
+  left: 50%; /* Position the left of the modal at the horizontal center of the viewport */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the modal horizontally and vertically */
+  background-color: white; /* Background color for the modal */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+  padding: 20px; /* Padding inside the modal */
+}
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust height as needed */
+  background-color: #333;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar #message {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#visitor-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: #292929;
+  border: 3px solid #3e3e3e;
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 24px;
+  text-decoration: solid;
+  font-size: 16px;
+  margin: 12px 14px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; /* Set a lower z-index value */
+}
+
+.form-control:hover {
+  border: 1px solid #fff;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.Choose {
+  margin-left: 30px;
+}
+
+.zoobutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.zoobutton:hover {
+  background-color: #b6b6b6; /* Darker Green */
+}
+
+.ChooseButtonV {
+  margin-left: 20px;
+}

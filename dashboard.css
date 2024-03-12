@@ -1,0 +1,14 @@
+* {
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+body {
+  background-image: url(./images/summer.jpg);
+  background-size: cover; /* or 'contain' */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
